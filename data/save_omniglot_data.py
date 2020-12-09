@@ -50,7 +50,7 @@ def load_and_save(save_file, size=None):
                 character_images.append((image, character_num, language_num))
             data.append(character_images)
 
-    np.save(save_file, np.array(data))
+    np.save(save_file, np.array(data, dtype=object))
 
 
 def main():
